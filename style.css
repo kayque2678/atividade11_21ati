@@ -2,14 +2,44 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:sans-serif;
 }
 
 :root {
     --main-background: #27272a;
     --text-color: #f4f4f5;
+    --nav-background: #18181b;
+    --a-color: #059669;
 }
 
 body {
     background: var(--main-background);
     color: var(--text-color);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+nav{
+    background-color: var(--nav-background);
+    width: fit-content;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: var(--text-color);
+    text-decoration: none;
+    Font-weight: bold;
+}
+
+a:hover{
+    color: var(--a-color);
 }
